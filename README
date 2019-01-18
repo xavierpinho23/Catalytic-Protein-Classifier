@@ -1,0 +1,16 @@
+In this project with pretend to acess the database UniProt, extract the data from various proteins
+and then develop a classifier.
+The first fasta file only contains proteins with catalytic activity (AC) (target = 1).
+The second one contains all the human proteins. We identify the ones present in the first
+file as containing AC and the other with non containing AC.
+After the dataset was built we balanced the data and then we splitted intro train and test and a SVM
+was applied. The results are shown in the output.txt file.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Work made using Python.
+Authors: Xavier Pinho and Jorge Melo (@/jorgegomelo)
+Course: Introduction to Bioinformatics, University of Coimbra, 2018/2019.
+--------------------------------------------------------------------------------------------------------------------------------
+
+
