@@ -1,0 +1,30 @@
+#Report 
+#Jorge Melo & Xavier Pinho
+#2018 - Introdução à Bioinformática
+
+Com este trabalho pretendemos aceder à base de dados "UniProt", extrair dados de várias proteínas e por fim desenvolver uma classificador utilizando a biblioteca Scikit-learn.
+
+Inicialmente foi feita a recolha de dados de um ficheiro fasta contendo apenas proteínas com Atividade Catalítica (AC), e construída uma base de dados com nome de cada proteína e a frequência absoluta de cada aminoácido.
+Adicionámos uma coluna 'target' = 1 para estas proteínas para identificá-las como tendo AC.
+
+Em seguida, foi feita nova recolha de um outro ficheiro fasta, contendo todas as proteínas Humanas.
+Identificamos quais destas estavam presentes no dataset inicial, classificando estas como tendo AC e as restantes como 'target' = 0.
+
+Uma vez construído, verificou-se um desbalanceamento dos dados: com 58486 proteínas sem AC e 14613 com AC.
+
+Dividiu-se o dataset em treino e teste (60-40) e aplicou-se um SVM sem balanceamento e outro balanceado para averiguar o impacto do balanceamento nos resultados.
+Os resultados obtidos foram:
+#Não balanceado
+Accuracy: 0.8064
+roc_auc:  0.6989785560256823
+#Balanceado
+Accuracy: 0.7445
+roc_auc: 0.736468705869946
+
+Observa-se a diminuição da accuracy do modelo e em contrapartida um aumento da AUC (Area under the ROC Curve).
+
+Uma extratégia de exploração de features que realizamos foi converter a frequência absoluta dos AA para a frequência relativa na proteína, o qual não apresentou melhorias significativas nos resultados, contudo tornou o programa muito mais rápido.
+Outra estratégia que pensamos para melhorar os resultados foi a remoção de features menos relevantes para o target ou utilização de algoritmos de seleção de features como por exemplo: kruskal-wallis, LDA ou ANOVA.
+
+Em conclusão, foi possível desenvolver um classificador capaz de identificar proteínas com AC e obtivemos bons resultados tendo em conta o dataset utilizado.
+No entanto, acreditamos que um dataset mais robusto, como por exemplo contendo informação estrutural das proteínas, tornaria possível obter resultados muito melhores.
