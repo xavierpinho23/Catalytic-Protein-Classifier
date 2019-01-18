@@ -1,0 +1,26 @@
+number of entries = 2000
+Accuracy: 0.8135
+roc_auc:  0.731836749490419
+___________________________________
+number of entries = 50000
+Accuracy: 0.8064
+roc_auc:  0.7005937472718526
+___________________________________
+number of entries = 10000
+Accuracy: 0.8064
+roc_auc:  0.6989785560256823
+
+#After balancing the data:
+
+number of entries = 2000
+Accuracy: 0.7445
+roc_auc: 0.7364662341749729
+__________________________________
+number of entries = 5000
+Accuracy: 0.7445
+roc_auc: 0.7364612907850266
+__________________________________
+number of entries = 10000
+Accuracy: 0.7445
+roc_auc: 0.736468705869946
+__________________________________
