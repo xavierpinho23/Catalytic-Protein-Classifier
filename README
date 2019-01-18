@@ -4,7 +4,7 @@ The first fasta file only contains proteins with catalytic activity (AC) (target
 The second one contains all the human proteins. We identify the ones present in the first
 file as containing AC and the other with non containing AC.
 After the dataset was built we balanced the data and then we splitted intro train and test and a SVM
-was applied. The results are shown in the output.txt file.
+was applied. The results are shown in the output.txt file and in the roc_curve_2000.png
 
 
 --------------------------------------------------------------------------------------------------------------------------------
