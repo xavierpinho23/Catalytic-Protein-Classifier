@@ -1,4 +1,4 @@
-In this project with pretend to acess the database UniProt, extract the data from various proteins
+In this project we pretend to acess the database UniProt, extract the data from various proteins
 and then develop a classifier.
 The first fasta file only contains proteins with catalytic activity (AC) (target = 1).
 The second one contains all the human proteins. We identify the ones present in the first
