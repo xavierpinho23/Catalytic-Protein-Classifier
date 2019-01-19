@@ -1,5 +1,6 @@
 How to use:
 
 You have to have on your computer the following programs: python (packages: pandas, numpy, urllib, sklearn and matplotlib).
+Download the whole repository to your computer.
 
 1) Go to directory containg the work1_ib.py file and write: python work1_ib.py
